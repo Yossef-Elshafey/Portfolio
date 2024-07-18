@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "old";
+  src: url("../zig_____.ttf");
+}
+.hidden {
+  display: none;
+}
+
+* {
+  color: white;
+  font-family: "old";
+}
+
+a {
+  color: cyan;
+}
+
+body {
+  background-color: #5a5a5a;
+  padding: 1rem 0;
+}
+
+.guide {
+  color: gray;
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+  text-wrap: wrap;
+  line-height: 2.5rem;
+}
+
+.sender {
+  border-top: 2px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.red-error {
+  color: red;
+  font-size: 2rem;
+}
+
+.container {
+  width: 90%;
+  height: calc(100vh - 3rem);
+  margin: 0 auto;
+  background-color: black;
+  overflow-y: scroll;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.prompt {
+  font-size: 20px;
+}
+
+.typing-anim {
+  font-size: 20px;
+  letter-spacing: 5px;
+  width: 100%;
+  text-wrap: wrap;
+  overflow: hidden;
+  animation: typing 4s;
+}
+
+.command {
+  background-color: transparent;
+  border: none;
+  overflow-x: visible;
+  outline: none;
+  font-size: 20px;
+  width: 50%;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
