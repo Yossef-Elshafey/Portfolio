@@ -145,6 +145,7 @@ function askForPrompt() {
     if (e.key === "Enter") {
       if (input.value.length === 0) {
         container.appendChild(errorHappend());
+        alwaysOnBottom();
       } else {
         const value = input.value.split(" ");
         const res = await call(value[value.length - 1], value[0]);
