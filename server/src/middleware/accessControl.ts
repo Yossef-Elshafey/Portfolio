@@ -1,21 +1,9 @@
+// WARNING: not reliable as CORS
 import { IncomingMessage, ServerResponse } from "http";
 interface ResponseSchema {
   status?: number;
   msg?: string;
 }
-
-/*
- * Cors implementation through { Access-Control-Allow-Origin }
- 
- * {I_TRUST} Define signle trusted server speaks with me
- 
- * * * * * *
- * Local Test
- * change the port sends the request then,
- * Who are you should be returned
- * * * * * *
- * { isTrusted = true } for devel
- */
 
 const I_TRUST = "http://127.0.0.1:8080";
 
